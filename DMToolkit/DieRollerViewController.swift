@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class DieRollViewController: UIViewController {
   
@@ -84,6 +85,16 @@ class DieRollViewController: UIViewController {
     d100ModText.text = String(1)
     d10000ModText.text = String(1)
     
+    d4ModText.keyboardType = UIKeyboardType.numberPad
+    d6ModText.keyboardType = UIKeyboardType.numberPad
+    d8ModText.keyboardType = UIKeyboardType.numberPad
+    d10ModText.keyboardType = UIKeyboardType.numberPad
+    d12ModText.keyboardType = UIKeyboardType.numberPad
+    d20ModText.keyboardType = UIKeyboardType.numberPad
+    d100ModText.keyboardType = UIKeyboardType.numberPad
+    d10000ModText.keyboardType = UIKeyboardType.numberPad
+
+    
     
   }
   
@@ -144,7 +155,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d4StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d4StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
     
@@ -172,7 +183,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d6StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d6StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }
@@ -199,7 +210,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d8StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d8StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }
@@ -226,7 +237,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d10StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d10StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }
@@ -253,7 +264,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d12StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d12StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }
@@ -280,7 +291,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d20StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d20StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }
@@ -307,7 +318,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d100StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d100StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }
@@ -334,7 +345,7 @@ class DieRollViewController: UIViewController {
       rollTotal += rollResult[currentRoll]
       rollTotal += Int(d10000StepperValue.text!)!
       
-      results.text = dieRolls + " = " + String(rollTotal)
+      results.text = dieRolls + " + Mod(" + d10000StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
   }

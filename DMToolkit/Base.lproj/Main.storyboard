@@ -1254,7 +1254,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="adi-4f-rjm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="adi-4f-rjm" propertyAccessControl="all">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -1271,7 +1271,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4JA-7i-Dtr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SQ9-IE-7KX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SQ9-IE-7KX" propertyAccessControl="all">
                             <connections>
                                 <action selector="addInitiative:" destination="wpZ-pY-gBm" id="72n-uE-P6b"/>
                             </connections>
@@ -1307,7 +1307,7 @@
         <!--Initiaive Tracker-->
         <scene sceneID="8IB-44-8tV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="z5e-y2-HtP" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="z5e-y2-HtP" propertyAccessControl="all" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Initiaive Tracker" id="egZ-Rf-MRJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EgV-No-vAC">

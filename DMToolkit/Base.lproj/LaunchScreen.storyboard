@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,44 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dungeon Master Toolkit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXU-Gr-tzH">
+                                <rect key="frame" x="5" y="307.5" width="366.5" height="52.5"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="34"/>
+                                <color key="textColor" red="0.94952291250228882" green="0.94362741708755493" blue="0.78912419080734253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_26_9550736784" translatesAutoresizingMaskIntoConstraints="NO" id="geU-8K-Xtm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2017. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Z-Cj-Up6">
+                                <rect key="frame" x="16" y="620.5" width="343" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.94952291250228882" green="0.94362741708755493" blue="0.78912419080734253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22609445452690125" green="0.073571555316448212" blue="0.058255322277545929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cXU-Gr-tzH" firstAttribute="top" secondItem="geU-8K-Xtm" secondAttribute="bottom" constant="7.5" id="0Qp-rO-hPo"/>
+                            <constraint firstItem="geU-8K-Xtm" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="20" id="3Ic-jE-Ek7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="73Z-Cj-Up6" secondAttribute="bottom" constant="20" id="8wQ-AT-kAL"/>
+                            <constraint firstItem="cXU-Gr-tzH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MuF-yf-YMK"/>
+                            <constraint firstItem="73Z-Cj-Up6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qvj-9U-9KJ"/>
+                            <constraint firstAttribute="trailing" secondItem="geU-8K-Xtm" secondAttribute="trailing" id="WKw-3E-HLD"/>
+                            <constraint firstItem="73Z-Cj-Up6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="iyN-Yf-lp3"/>
+                            <constraint firstItem="geU-8K-Xtm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rMz-eM-Gcd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="73Z-Cj-Up6" secondAttribute="trailing" id="z0t-mF-8gf"/>
+                            <constraint firstItem="cXU-Gr-tzH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zML-mO-FP5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imageedit_26_9550736784" width="570" height="674"/>
+    </resources>
 </document>

@@ -49,6 +49,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     self.characterClass.dataSource = self
     self.characterClass.delegate = self
+    
+    strText.isUserInteractionEnabled = false
+    conText.isUserInteractionEnabled = false
+    dexText.isUserInteractionEnabled = false
+    intText.isUserInteractionEnabled = false
+    wisText.isUserInteractionEnabled = false
+    chaText.isUserInteractionEnabled = false
   }
   
   func numberOfComponents(in pickerView: UIPickerView) -> Int {

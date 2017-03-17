@@ -153,11 +153,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d4StepperValue.text!)!
       
-      results.text = dieRolls + " + Mod(" + d4StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
+    rollTotal += Int(d4StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d4StepperValue.text! + ")\n" + String(rollTotal)
     
   }
   
@@ -181,11 +182,13 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d6StepperValue.text!)!
       
-      results.text = dieRolls + " + Mod(" + d6StepperValue.text! + ")\n" + String(rollTotal)
+      
+      
       currentRoll += 1
     }
+    rollTotal += Int(d6StepperValue.text!)!
+    results.text = dieRolls + " + Mod(" + d6StepperValue.text! + ")\n" + String(rollTotal)
   }
   
   @IBAction func d8Roll(_ sender: UIButton) {
@@ -208,11 +211,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d8StepperValue.text!)!
-      
-      results.text = dieRolls + " + Mod(" + d8StepperValue.text! + ")\n" + String(rollTotal)
-      currentRoll += 1
+            currentRoll += 1
     }
+    rollTotal += Int(d8StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d8StepperValue.text! + ")\n" + String(rollTotal)
+
   }
   
   @IBAction func d10Roll(_ sender: UIButton) {
@@ -235,11 +239,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d10StepperValue.text!)!
-      
-      results.text = dieRolls + " + Mod(" + d10StepperValue.text! + ")\n" + String(rollTotal)
-      currentRoll += 1
+            currentRoll += 1
     }
+    rollTotal += Int(d10StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d10StepperValue.text! + ")\n" + String(rollTotal)
+
   }
   
   @IBAction func d12Roll(_ sender: UIButton) {
@@ -262,11 +267,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d12StepperValue.text!)!
       
-      results.text = dieRolls + " + Mod(" + d12StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
+    rollTotal += Int(d12StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d12StepperValue.text! + ")\n" + String(rollTotal)
   }
   
   @IBAction func d20Roll(_ sender: UIButton) {
@@ -289,11 +295,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d20StepperValue.text!)!
       
-      results.text = dieRolls + " + Mod(" + d20StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
+    rollTotal += Int(d20StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d20StepperValue.text! + ")\n" + String(rollTotal)
   }
   
   @IBAction func d100Roll(_ sender: UIButton) {
@@ -316,11 +323,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d100StepperValue.text!)!
       
-      results.text = dieRolls + " + Mod(" + d100StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
+    rollTotal += Int(d100StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d100StepperValue.text! + ")\n" + String(rollTotal)
   }
   
   @IBAction func d10000Roll(_ sender: UIButton) {
@@ -343,11 +351,12 @@ class DieRollViewController: UIViewController {
       }
       
       rollTotal += rollResult[currentRoll]
-      rollTotal += Int(d10000StepperValue.text!)!
       
-      results.text = dieRolls + " + Mod(" + d10000StepperValue.text! + ")\n" + String(rollTotal)
       currentRoll += 1
     }
+    rollTotal += Int(d10000StepperValue.text!)!
+    
+    results.text = dieRolls + " + Mod(" + d10000StepperValue.text! + ")\n" + String(rollTotal)
   }
   
   override func encodeRestorableState(with coder: NSCoder) {
